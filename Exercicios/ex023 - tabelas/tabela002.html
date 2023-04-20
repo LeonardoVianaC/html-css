@@ -16,15 +16,39 @@
             width: 450px;
             border-collapse: collapse;  
         }
+
+        caption{
+            border: 2px solid black;
+            background-color: lightgrey;
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            border-collapse: separate;
+
+                        
+        }
         thead{
-            background-color: lightgray;
-            
+            background-color:grey;
+            color: white;   
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background-color:grey;
+            color: white;
+
         }
         
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
         th{
             
             padding: 10px;
             border: 1px solid black;
+            
         }
 
         td{
@@ -42,12 +66,19 @@
         td.num{
             text-align: right;
         }
+
+        tfoot{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas Grandes</h1>
     <!-- Anatomia para tabelas grandes
             table
+                caption
                 thead
                     tr ,td, th
                 tbody
@@ -58,11 +89,12 @@
 
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade federativa</th>
-                <th>População (Censo 2022)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População (Censo 2022)</th>
             </tr>
         </thead>
         <tbody>
@@ -218,12 +250,36 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>null</td>
-                <td>População total</td>
+                
+                <th scope="row" colspan="2" >População total</th>
                 <td class="num">207 883 699</td>
             </tr>
         </tfoot>
     </table>
+
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo ea qui sint. Commodi quibusdam corporis animi consequatur! Quas, error quaerat! Maiores at tempora sint! Possimus, numquam. Sunt, doloremque dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique perferendis magni odit officiis? Aliquid sint porro rerum ut est, ratione excepturi nisi iure aspernatur perspiciatis repellat fugit consequuntur deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit similique cumque repudiandae porro? Minima reiciendis nobis eum explicabo debitis rerum tenetur assumenda in ipsum, accusantium unde facere ducimus mollitia sit.</p>
 
 
 </body>
